@@ -95,7 +95,7 @@
 
     #first_page {
 
-        height: 45rem;
+        height: 37rem;
     }
 
     #first_page_left {
@@ -109,7 +109,7 @@
     #first_page_right {
         position: absolute;
         width: 40%;
-        height: 45rem;
+        height: 37rem;
         background-color: hsl(0, 0%, 100%);
 
 
