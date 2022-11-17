@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Room homepage</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css"  >
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container" >
+   <nav>
+    <div class="icon_hamburger" ><img src="images/icon-hamburger.svg" ></div>
+    <div class="navbar_item navbar_brand" >
+      <img src="images/logo.svg">
+    </div>
+
+    <div class="navbar_item navbar_list ">
+      <ol>
+        <div class="close_button" > <img src="images/icon-close.svg" ></div>
+        <li id="first_li"  onmouseover="show_border(this)" onmouseleave="hide_border(this)" class="navbar_item">Home<p class="space"> </p></li>
+        <li onmouseover="show_border(this)" onmouseleave="hide_border(this)" class="navbar_item"> Shop<p class="space"> </p></li>
+        <li onmouseover="show_border(this)" onmouseleave="hide_border(this)" class="navbar_item"> About<p class="space"> </p></li>
+        <li onmouseover="show_border(this)" onmouseleave="hide_border(this)" class="navbar_item"> Contact<p class="space"> </p></li>
+      </ol>
+
+
+    </div>
+
+
+
+   </nav>
+   <div id="first_page" >
+    
+     
+        <div id="first_page_left" class="slideshow-container pic_container ">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides ">
+            
+            <img src="images/desktop-image-hero-1.jpg" style="width:100%">
+            
+          </div>
+        
+          <div class="mySlides ">
+            
+            <img src="images/desktop-image-hero-2.jpg" style="width:100%">
+           
+          </div>
+        
+          <div class="mySlides fade">
+            
+            <img src="images/desktop-image-hero-3.jpg" style="width:100%">
+            
+          </div>
+        
+          
+        </div>
+        <div id="first_page_right" class="slideshow-container">
+
+        
+            <div class="textslides ">
+              <div>              <h1> Discover innovative <br> ways to decorate</h1>
+                <p>  We provide unmatched quality, comfort, and style for property owners across the country. 
+                  Our experts combine form and function in bringing your vision to life. Create a room in your 
+                  own style with our collection and make your property a reflection of you and what you love.</p>
+                  <button onmouseover="colorgray(this)"  onmouseleave="colorblack(this)"   >Shop now    <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg></button>
+                </div>
+              
+
+            </div>
+          
+            <div class="textslides ">
+              
+              <div><h1>We are available all<br> across the globe</h1> 
+                <p>  With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+                  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+                  store locator. Any questions? Don't hesitate to contact us today.</p>
+                  <button  onmouseover="colorgray(this)"   onmouseleave="colorblack(this)"  >Shop now    <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg></button></div>
+  
+             
+            </div>
+            <div class="textslides fade">
+              <div>          <h1>Manufactured with the best materials</h1>  
+
+                <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+                 to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+                 experience in this industry, we understand what customers want for their home and office.</p> 
+               
+                 <button  onmouseover="colorgray(this)"  onmouseleave="colorblack(this)" >Shop now    <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg></button></div>
+  
+              
+            </div>
+          
+            
+            <a class="prev" onclick="plusSlides(-1)"><img src="images/icon-angle-left.svg"></a>
+            <a class="next" onclick="plusSlides(1)"><img src="images/icon-angle-right.svg"></a>
+          </div>
+
+
+
+        </div>
+   
+ 
+   
+   <div id="last_page">
+    <div id="last_page_left" >
+      <img src="images/image-about-dark.jpg">
+
+    </div>  
+    <div id="last_page_middle" >
+      <div>      <h2>About our furniture</h2>
+
+        <p>Our multifunctional collection blends design and function to suit your individual taste.
+         Make each room unique, or pick a cohesive theme that best express your interests and what
+         inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+         or anything in between. Product specialists are available to help you create your dream space.</p> </div>
+
+
+    </div>
+    <div id="last_page_right" >
+      <img src="images/image-about-light.jpg">
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Salih Ilgaz</a>.
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js" ></script>
+</body>
+</html>
