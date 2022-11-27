@@ -7,6 +7,8 @@
 
         box-sizing: border-box;
 
+        transition: color 1s, background-color 1s , fill 1s ;
+
 
     }
 
@@ -65,11 +67,12 @@
 
     .space {
 
-        display: none;
+
 
 
         margin: auto;
-        width: 20px;
+        width: 0px;
+        transition: width 0.5s;
         height: 2px;
         background-color: white;
 
@@ -115,7 +118,11 @@
 
     }
 
+
+
+
     .textslides div {
+
         padding: 6.0rem;
         font-size: 1.3rem;
     }

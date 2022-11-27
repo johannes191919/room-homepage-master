@@ -38,11 +38,11 @@ function showSlides(n) {
 
 
 function show_border(li) {
-    $(li).children().css("display", "block")
+    $(li).children().css("width", "20px")
 
 }
 function hide_border(li) {
-    $(li).children().css("display", "none")
+    $(li).children().css("width", "0px")
 
 }
 function colorgray(target) {
